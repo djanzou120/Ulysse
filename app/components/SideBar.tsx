@@ -7,7 +7,7 @@ import SocialMedia from "./SocialMedia";
 const SideBar = () => {
 
     return (
-        <div className="h-full w-32 hidden md:block">
+        <div className="h-full w-32 hidden md:block fixed z-20">
             <div className="flex flex-col items-center pt-4 relative h-full">
                 <div id="logo" className="text-5xl font-bold text-center h-1/6 pt-5">
                     D.

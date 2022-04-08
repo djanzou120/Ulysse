@@ -11,7 +11,7 @@ const MobileNavBar = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
     return (
-        <div className="w-full h-20 md:hidden">
+        <div className="w-full h-20 md:hidden fixed z-20">
             <div className="flex flex-row justify-between px-10 items-center h-full">
                 <div id="logo" className="text-5xl font-bold">
                     D.
@@ -72,6 +72,10 @@ const MobileNavBar = () => {
                 </div>
                 <div className="flex justify-center py-6 px-12">
                     <button className="py-3 px-10 border border-green-600 border-2 rounded-full font-light uppercase text-sm">Telecharger mon CV</button>
+                </div>
+                <div className="mt-10 text-center relative h-10 flex items-center justify-center">
+                    <div className="h-0.5 w-full bg-green-700"/>
+                    <span className="absolute px-4 dark:bg-black bg-white">djanzou120@yahoo.fr</span>
                 </div>
             </div>
 
