@@ -21,4 +21,17 @@ body {
     animation: bounce 2s infinite;
 }
 
+@keyframes horizontalBounce {
+    0%, 100% {
+        transform: translateX(-75%);
+        animation-timing-function: cubic-bezier(0.8, 0, 0.4, 0.5);
+    }
+    50% {
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 0.5);
+    }
+}
 
+.workTogether {
+    animation: horizontalBounce 2s infinite;
+}

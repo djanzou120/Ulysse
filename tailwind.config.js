@@ -5,7 +5,11 @@ module.exports = {
     purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./app/components/**/*.{js,ts,jsx,tsx}", "./app/layouts/**/*.{js,ts,jsx,tsx}"],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
-        extend: {},
+        extend: {
+            textUnderlineOffset : {
+                10 : "16px"
+            }
+        },
         fontFamily: {
             ...fontFamily,
             'manrope': "Manrope",

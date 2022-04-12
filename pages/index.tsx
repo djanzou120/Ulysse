@@ -8,6 +8,8 @@ import SideBar from "../app/components/SideBar";
 import MobileNavBar from "../app/components/MobileNavBar";
 import ThemeToggle from "../app/components/ThemeToggle";
 import {useState} from "react";
+import PageScrollElement from "../app/components/PageScrollElement";
+import SkillPage from "../app/components/SkillPage";
 
 const Home: NextPage = () => {
     const [currentPage, setCurrentPage] = useState<number>(0);
@@ -43,19 +45,19 @@ const Home: NextPage = () => {
                         <span className="myBounce w-0.5 h-52 bg-green-400 absolute"/>
                     </div>
                 </div>
-                <div className="w-full h-full top-0 relative">
+                <div className="w-full h-full top-0 absolute">
                     <React.Fragment>
                         <ReactPageScroller
                             pageOnChange={page => setCurrentPage(page)}
                             onBeforePageScroll={page => console.log(page)}
                             customPageNumber={currentPage}
                         >
-                            <div className="component first-component">
-                                Mix
-                            </div>
-                            <div className="component second-component">
-                                DJ
-                            </div>
+                            <PageScrollElement>
+                                <SkillPage/>
+                            </PageScrollElement>
+                            <PageScrollElement>
+                                <span>asd asd</span>
+                            </PageScrollElement>
                         </ReactPageScroller>
                     </React.Fragment>
                 </div>
