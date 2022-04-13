@@ -12,8 +12,8 @@ const SideBar = () => {
                 <div id="logo" className="text-5xl font-bold text-center h-1/6 pt-5">
                     D.
                 </div>
-                <div id="menu" className="relative h-3/6 flex flex-col">
-                    <ul className="flex flex-col uppercase gap-y-24 text-sm font-light">
+                <div id="menu" className="relative h-4/6 flex flex-col">
+                    <ul className="flex flex-col uppercase space-y-24 text-sm font-light h-full mt-16">
                         <MenuItem href="#competence">
                             Competences
                         </MenuItem>

@@ -29,7 +29,7 @@ const MobileNavBar = () => {
             </div>
 
             {/*  Mobile Menu  */}
-            <div className={`${menuOpen ? "block" : "hidden"} h-full w-screen fixed`}>
+            <div className={`${menuOpen ? "block" : "hidden"} h-full w-screen fixed bg-white dark:bg-black`}>
                 <div className="flex justify-center items-center h-96 mt-10">
                     <ul className="flex flex-col justify-around text-center h-full text-lg font-medium uppercase">
                         <li>

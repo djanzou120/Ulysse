@@ -10,6 +10,7 @@ import ThemeToggle from "../app/components/ThemeToggle";
 import {useState} from "react";
 import PageScrollElement from "../app/components/PageScrollElement";
 import SkillPage from "../app/components/SkillPage";
+import AboutPage from "../app/components/AboutPage";
 
 const Home: NextPage = () => {
     const [currentPage, setCurrentPage] = useState<number>(0);
@@ -49,14 +50,16 @@ const Home: NextPage = () => {
                     <React.Fragment>
                         <ReactPageScroller
                             pageOnChange={page => setCurrentPage(page)}
-                            onBeforePageScroll={page => console.log(page)}
                             customPageNumber={currentPage}
                         >
                             <PageScrollElement>
                                 <SkillPage/>
                             </PageScrollElement>
                             <PageScrollElement>
-                                <span>asd asd</span>
+                                <AboutPage/>
+                            </PageScrollElement>
+                            <PageScrollElement>
+                                <AboutPage/>
                             </PageScrollElement>
                         </ReactPageScroller>
                     </React.Fragment>
