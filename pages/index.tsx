@@ -11,6 +11,7 @@ import {useState} from "react";
 import PageScrollElement from "../app/components/PageScrollElement";
 import SkillPage from "../app/components/SkillPage";
 import AboutPage from "../app/components/AboutPage";
+import ShowcasePage from "../app/components/ShowcasePage";
 
 const Home: NextPage = () => {
     const [currentPage, setCurrentPage] = useState<number>(0);
@@ -59,7 +60,7 @@ const Home: NextPage = () => {
                                 <AboutPage/>
                             </PageScrollElement>
                             <PageScrollElement>
-                                <AboutPage/>
+                                <ShowcasePage/>
                             </PageScrollElement>
                         </ReactPageScroller>
                     </React.Fragment>

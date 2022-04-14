@@ -11,7 +11,7 @@ const MobileNavBar = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
     return (
-        <div className="w-full h-20 md:hidden fixed z-20">
+        <div className="w-full h-20 md:hidden fixed z-20 bg-white dark:bg-black">
             <div className="flex flex-row justify-between px-10 items-center h-full">
                 <div id="logo" className="text-5xl font-bold">
                     D.
