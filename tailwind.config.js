@@ -8,6 +8,9 @@ module.exports = {
         extend: {
             textUnderlineOffset : {
                 10 : "16px"
+            },
+            border : {
+                3 : "3px"
             }
         },
         fontFamily: {
@@ -18,9 +21,6 @@ module.exports = {
             transparent: "transparent",
             current: "currentColor",
             ...colors,
-            // green:{
-            //     // 400 : "#0B885B"
-            // }
         }
     },
     variants: {
