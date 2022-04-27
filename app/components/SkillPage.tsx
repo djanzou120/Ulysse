@@ -1,12 +1,13 @@
 import {BiChevronRight} from "react-icons/bi";
+import Image from "next/image"
 
 
 const SkillPage = () => {
 
     return (
         <div className="flex flex-col items-center justify-center h-full md:gap-y-10 gap-y-7 ">
-            <div id="profileImg" className="mt-3 rounded-full">
-                <img src="profile.png" alt="Image profile"/>
+            <div id="profileImg" className="mt-3 rounded-full overflow-hidden">
+                <Image height={180} width={180} src="/profile.png" alt="Image profile"/>
             </div>
             <h6 className="text-green-400">Yo! Je suis</h6>
             <h4 className="uppercase text-4xl font-light">Djanzou Junior</h4>
@@ -15,7 +16,7 @@ const SkillPage = () => {
                 <img className="absolute md:-right-12 mt-1 -right-1 w-48 md:w-full" src="/path.png" alt="underlinerTitle"/>
             </div>
             <div id="description" className="md:pt-20 md:px-20 pt-12 px-8">
-                <span className="text-justify break-words">
+                <span className="text-justify break-words font-light">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi aut dignissimos, dolorum enim perspiciatis similique tenetur! Itaque maxime praesentium provident! Quod, quos, vero. Blanditiis doloribus in non repudiandae tenetur!
                 </span>
             </div>
