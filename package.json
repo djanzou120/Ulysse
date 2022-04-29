@@ -20,7 +20,8 @@
     "react-page-scroller": "^2.2.1",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.0.23",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
