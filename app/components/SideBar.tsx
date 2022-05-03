@@ -3,8 +3,11 @@ import {FiInstagram} from "react-icons/fi";
 
 import MenuItem from "./MenuItem";
 import SocialMedia from "./SocialMedia";
+import {useContext} from "react";
+import {ScrollPageContext} from "../context/ScrollPageContext";
 
 const SideBar = () => {
+    const {currentPage, setCurrentPage} = useContext(ScrollPageContext)
 
     return (
         <div className="h-full w-32 hidden md:block fixed z-20">
@@ -14,16 +17,16 @@ const SideBar = () => {
                 </div>
                 <div id="menu" className="relative h-4/6 flex flex-col">
                     <ul className="flex flex-col uppercase space-y-24 text-sm font-light h-full mt-16">
-                        <MenuItem href="#competence">
+                        <MenuItem onClick={() => setCurrentPage(0)} current={currentPage == 0}>
                             Competences
                         </MenuItem>
-                        <MenuItem href="#about">
+                        <MenuItem onClick={() => setCurrentPage(1)} current={currentPage == 1}>
                             A propos
                         </MenuItem>
-                        <MenuItem href="#experience">
+                        <MenuItem onClick={() => setCurrentPage(2)} current={currentPage == 2}>
                             Experience
                         </MenuItem>
-                        <MenuItem href="#contact">
+                        <MenuItem onClick={() => setCurrentPage(3)} current={currentPage == 3}>
                             Contact
                         </MenuItem>
                     </ul>

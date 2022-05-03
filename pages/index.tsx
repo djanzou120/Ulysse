@@ -1,6 +1,6 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
-import React, {Fragment} from "react";
+import React, {Fragment, useContext} from "react";
 
 import ReactPageScroller from "react-page-scroller";
 
@@ -13,9 +13,10 @@ import SkillPage from "../app/components/SkillPage";
 import AboutPage from "../app/components/AboutPage";
 import ShowcasePage from "../app/components/ShowcasePage";
 import ContactPage from "../app/components/ContactPage";
+import {ScrollPageContext} from "../app/context/ScrollPageContext";
 
 const Home: NextPage = () => {
-    const [currentPage, setCurrentPage] = useState<number>(0);
+    const {currentPage, setCurrentPage} = useContext(ScrollPageContext)
 
     return (
         <div>
